@@ -22,7 +22,7 @@ namespace ReadyPlayerMe.WebView.Editor
 
         public void OnPostGenerateGradleAndroidProject(string basePath)
         {
-            string manifestPath = GetManifestPath(basePath);
+            /* string manifestPath = GetManifestPath(basePath);
             AndroidManifest androidManifest = new AndroidManifest(manifestPath);
 
             androidManifest
@@ -33,7 +33,7 @@ namespace ReadyPlayerMe.WebView.Editor
                 .UseGallery()
                 .AllowBackup();
 
-            androidManifest.Save();
+            androidManifest.Save();*/
         }
 
         private string GetManifestPath(string basePath)
