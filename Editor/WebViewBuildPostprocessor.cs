@@ -22,18 +22,19 @@ namespace ReadyPlayerMe.WebView.Editor
 
         public void OnPostGenerateGradleAndroidProject(string basePath)
         {
-            /* string manifestPath = GetManifestPath(basePath);
+            string manifestPath = GetManifestPath(basePath);
             AndroidManifest androidManifest = new AndroidManifest(manifestPath);
 
             androidManifest
                 .SetHardwareAccelerated(true)
-                .SetUsesCleartextTraffic(true)
-                .UseCamera()
+                .SetUsesCleartextTraffic(true);
+                
+                /*.UseCamera()
                 .UseMicrophone()
                 .UseGallery()
-                .AllowBackup();
+                .AllowBackup();*/
 
-            androidManifest.Save();*/
+            androidManifest.Save();
         }
 
         private string GetManifestPath(string basePath)
